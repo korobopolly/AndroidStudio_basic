@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         BtnAdd.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 try {
+                    num1 = edit1.getText().toString();
                     num2 = edit2.getText().toString();
                     result = Float.parseFloat(num1) + Float.parseFloat(num2);
                     textResult.setText("계산 결과 : " + result.toString());
